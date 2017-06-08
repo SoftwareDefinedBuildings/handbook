@@ -85,3 +85,39 @@ Handling
 ---------
 - Log: NSLog, DebugLog
 - Error: NSError (Domain, Code, User Info)
+
+Objective-C Categories
+---------
+Allows extending an existing class by adding behavior useful in specific situations
+Put simply, allows adding a method to an existing class.
+
+Posing (Deprecated)
+---------
+One class "poses", or, replaces another class within a program.
+Useful for replacing a built in class with a custom class
+Posing class MUST be a descendant of the target Class
+Code: [MyCustomString poseAsClass:[NSString class]];
+
+Extension
+---------
+Use () to keep adding private methods / instance fields to a class in a separate block.
+
+Protocol
+---------
+Guidelines that a class must follow
+
+@protocol ProtocolName
+@required
+// list of required methods
+@optional
+// list of optional methods
+@end
+
+@interface MyClass:NSObject <ProtocolName>
+...
+@end
+
+Class Cluster
+---------
+- Groups private concrete subclasses under public abstract superclass
+- Instead of multiple classes w/ similar functions => one overlord superclass
