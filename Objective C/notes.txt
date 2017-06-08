@@ -55,3 +55,11 @@ Represent 1 task instead of multiple methods
 Declaration: returntype (^blockName)(argumentType);
 Implementation: returntype (^blockName)(argumentType) = ^{};
 Invocation: blockName();
+
+Numbers
+---------
+Cast different primitive values to NSNumber class as specific type
+NSNumber *result = [NSNumber numberWith(fill in blank!):product];
+
+Pointers
+---------
