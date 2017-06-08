@@ -63,3 +63,15 @@ NSNumber *result = [NSNumber numberWith(fill in blank!):product];
 
 Pointers
 ---------
+Pointer: Variable where value is address of another variable.
+- * : specifies a variable is a pointer, extracts value of pointer
+- & : denotes address of non-pointer variable
+- Best Practice: Assign pointers to null if no values at the moment.
+
+Strings
+---------
+Refer to NSString class
+
+Preprocessor
+---------
+- Text substitution tool instructing compiler to pre-process BEFORE compilation
