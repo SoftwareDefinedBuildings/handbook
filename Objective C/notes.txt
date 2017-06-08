@@ -1,0 +1,48 @@
+Variables
+---------
+lvalue:
+    - Expressions referring to memory location.
+    - Either left or right hand side of assignment
+    - Variables
+
+rvalue:
+    - Data value stored at some address.
+    - Cannot have value assigned to it, always right hand
+    - Actual values / literals
+
+Constants
+---------
+Integers:
+    - 0x or 0X : hexadecimal
+    - 0 : octal
+    - nothing : decimal
+
+Escape Characters: Begin with \
+
+Defining Constants:
+    - #define name value
+    - const type name = value
+
+
+Operators
+---------
+Bitwise: & (and), | (or), ^ (01 or 10)
+Miscellaneous: & (variable address), * (pointer), ? _ : _ (conditional)
+
+Loops
+---------
+While, For, Do-While
+
+Conditionals
+---------
+if, if...else, nested if, switch, nested switch
+
+Methods
+---------
+1. Creating a method
+- (return_type) method_name: (argType1) argName1
+        paramName2:(argType2) argName2 {
+        body of function
+  }
+2. Calling a method
+[instance method:argName1 paramName2:argName2]
