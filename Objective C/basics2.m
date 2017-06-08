@@ -43,6 +43,25 @@ struct books {
 }
 @end
 
+//ERROR HANDLING
+@interface errorClass:NSObject
+- (NSString *) getEmployeeNameForID:(int) id withError:(NSError *) errorPointer;
+@end
+
+@implementation errorClass:
+- (NSString *) getEmployeeNameForID:(int) id withError:(NSError *) errorPointer {
+    if (id == 1) {
+        return @"Test Passed";
+    } else {
+        NSString *domain = @"com.john.roundabout.errordomain";
+        NSString *desc = NSLocalizedString(@"Unable to complete the process", @"");
+        NSDictionary *userInfo [[NSDictionary alloc] initWithObjectsAndKeys: desc, @"NSLocalizedDescriptionKey", NULL];
+        *errorPtr = [NSError errorWithDomain:domain code:-101 userInfo:userInfo];
+        return @"";
+    }
+}
+@end
+
 float main() {
     //NUMBERS
     SampleClass instance = [[SampleClass alloc] init];

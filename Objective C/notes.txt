@@ -75,3 +75,13 @@ Refer to NSString class
 Preprocessor
 ---------
 - Text substitution tool instructing compiler to pre-process BEFORE compilation
+
+Typedef
+---------
+1. Give a type an alias
+2. Give name to user-defined data type
+
+Handling
+---------
+- Log: NSLog, DebugLog
+- Error: NSError (Domain, Code, User Info)
