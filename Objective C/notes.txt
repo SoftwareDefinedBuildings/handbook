@@ -46,3 +46,12 @@ Methods
   }
 2. Calling a method
 [instance method:argName1 paramName2:argName2]
+
+Blocks
+---------
+Object + Data w/ Related Behavior
+Represent 1 task instead of multiple methods
+
+Declaration: returntype (^blockName)(argumentType);
+Implementation: returntype (^blockName)(argumentType) = ^{};
+Invocation: blockName();

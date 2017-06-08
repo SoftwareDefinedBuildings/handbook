@@ -1,14 +1,12 @@
-// Import preprocessor file
-#import <Foundation/Foundation.h>
+#import <Foundation/Foundation.h> // Import preprocessor file
 
-//Interface with class name, superclass, and sample methods
-@interface SampleClass:NSObject
-- (void) sampleMethod;
+//INTERFACE
+@interface SampleClass:NSObject //Interface, class name, superclass
+- (void) sampleMethod; //Sample Methods
 - (int) sampleMethod2;
 @end
 
-//Implementation of interface
-@implementation SampleClass
+//METHODS
 - (void) sampleMethod { //Return type in parentheses, method name
     NSLog(@"Hello, World! \n");
 }
@@ -25,12 +23,19 @@
 }
 @end
 
+//BLOCKS
+double (^power)(double, double) =
+    ^(double firstVal, double secondVale) {
+        return firstVal ** secondVal;
+    }
+double result = power(2, 4);
+
 //VARIABLES
 extern int a, b; //'extern' keyword allows declaring variable anymore
 extern float c; //Variables can only be defined once on each level
 #define LENGTH 10; //Constant
 
-//Main method
+//MAIN
 int main() {
     // VARIABLES & CONSTANTS
     int d = 5;
