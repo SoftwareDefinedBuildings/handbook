@@ -12,16 +12,16 @@ git push origin master
 
 ## Basic Commands
 In these following sections, we'll take a deeper look at the basic commands and their various options.
-### git add
+#### git add
 ```unix
 ```
-### git commit
+#### git commit
 ```unix
 ```
-### git remote
+#### git remote
 ```unix
 ```
-### miscellaneous
+#### miscellaneous
 ```unix
 git config
 git log
