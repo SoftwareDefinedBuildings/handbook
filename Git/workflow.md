@@ -1,12 +1,12 @@
 # Workflow Examples
-These sections are intended to give you a working understanding of how you can use Github. By the end of the this section, you should know how to create local and remote repositories, push changes to both, and remove both.
+This document is intended to give you a working understanding of how you can use Github. By the end of the this section, you should know how to create local and remote repositories, push changes to both, and remove both.
 ### Creating Repositories
 ```unix
 git init
 touch test.py
 git add -A
 git commit -m 'Initial Commit'
-git remote add origin https://github.com/(username)/(repository name).git
+git remote add origin https://github.com/(username)/(repository-name).git
 git push origin master
 ```
 This pithy segment of code helps you accomplish many things.

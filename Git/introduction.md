@@ -17,6 +17,6 @@ Github is a company that allows you to save your git history to a remote server.
 1. Git Cheat Sheet: https://www.git-tower.com/blog/git-cheat-sheet/
 2. Git Tutorial (In Depth): https://www.tutorialspoint.com/git/
 3. Official Git Documentation: https://git-scm.com/documentation
-4. Student Developer Pack :raised_hand:: https://education.github.com/pack
+4. Student Developer Pack :raised_hands:: https://education.github.com/pack
 
 Happy Committing! - :octocat:
