@@ -49,9 +49,9 @@ You've encountered a change that you don't want. Time for cleanup. There are two
 
 One way to go about deleting a file is 'git rm' :heavy_minus_sign:. This command removes a file from a working directory. Unlike a regular unix 'rm', 'git rm' not only removes the file, but also stages that deletion. If you only want to delete the file from your .git file, but would like to keep a copy in your local directory, use the '--cached' option. Keep in mind, 'git rm' removes *files*, not *changes*.
 
-On the other hand, if you're not sure you want to keep the changes you've made, use the 'git stash' command. 'git stash save' allows you to remember the modifications you've made while returning you to the latest commit of your working directory.
+On the other hand, if you're not sure you want to keep the changes you've made, use the 'git stash' :question: command. 'git stash save' allows you to remember the modifications you've made while returning you to the latest commit of your working directory.
 
-Option | Purpose
+Option & Commands | Purpose
 --- | ---
 (stash) list | list stashed modifications
 (stash) show | inspect stashed modifications
