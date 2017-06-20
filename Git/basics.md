@@ -61,11 +61,22 @@ Option & Commands | Purpose
 
 ### Remote Repository Interaction
 ```unix
-git remote
+git remote add origin ...
+git remote prune
 ```
+So far, the above commands have been enacting change on a local level. With 'git remote' :cloud:, we are able to manage Github repositories stored in remote servers. Most remote commands will revolve around getting/setting repository URLs or renaming branches. A sizable set of remote commands also deal with branch management, so we will touch on them in this table, but if you're unclear as to what those are, refer to the collaboration section.
+
+Option & Commands | Purpose
+--- | ---
+add <branch> <URL> | Create a remote alias (branch) for a repository URL
+get-url / set-url | Retrieve or change a remote alias' associated URL
+prune | Removes deprecated remote branch references
+rename <old alias name> <new alias name>| Rename an alias
 
 ### Miscellaneous
-```unix
-git config
-git log
-```
+Command | Purpose | Options
+--- | --- | ---
+git config | Configuration. Change your username and password, use --global for every repository |
+git diff | View changes that have occurred in tracked files |
+git log | Show history of commits starting with latest commit | -p <file> (file changes over time)
+git status | Show the status of different files and changes since the most recent commit | -s (short),
