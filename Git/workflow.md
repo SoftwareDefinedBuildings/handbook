@@ -17,7 +17,7 @@ The 'git init' statement creates a new .git file within your current directory. 
 
 'git add' stages these modifications. The 'git commit' command officially tells the git file to record these changes. This commit becomes the latest version of the directory. Conceptually, it's a very important step. By itself, your computer has no idea which changes are and aren't important. A commit is essentially your stamp of approval :white_check_mark: to save the changes that you deem important. Later on, you'll find that it's really useful to look back on previous commits of your project, and in case something lethal happens to your project, you can revert to previous commits.
 
-Up until this point, we've only been using git on a local level. The last two lines involve working with Github :octocat:, which allows you to send your local files to a remote server stored by Github. Every repository on Github has an associated URL that follows the format above. 'git remote add' associates a keyword, in this case, 'origin', with a destination URL, 'https://github.com/(username)/(repository name).git'.
+Up until this point, we've only been using git on a local level. The last two lines involve working with Github :octocat:, which allows you to send your local files to a remote server stored by Github. Every repository on Github has an associated URL that follows the format above. 'git remote add' associates a keyword, in this case, 'origin', with a destination URL, 'https://github.com/(username)/(repository-name).git'.
 
 *Note*: You might notice that although you did a 'git init' command, you don't see a new file appear in your directory, and when you do a regular 'ls' command in terminal, you can't find it. This is because git files are *hidden* files. Don't worry too much about why. Here's a couple ways to 'see' a git, and more generally, hidden files.
 1. Terminal: 'ls -a' is a regular 'ls' command with the '-a' option that displays hidden files
@@ -34,7 +34,7 @@ After you've created a local .git file, this series of commands will dominate yo
 
 ### Copy an Existing Remote Repository
 ```unix
-git clone https://github.com/(username)/(repository name).git
+git clone https://github.com/(username)/(repository-name).git
 ```
 Let's say while searching Github, you come across a python game project that you find very interesting. Sigh, if you could only download the code and play with it. Thanks to Github's support for an open source community, you can do exactly that! Go to the repository's webpage, copy the github site link, and paste it into terminal with the command above. 'git clone' does exactly what it says it does, it 'clones' a repository.
 

@@ -77,6 +77,7 @@ rename <old alias name> <new alias name>| Rename an alias
 Command | Purpose | Options
 --- | --- | ---
 git config | Configuration. Change your username and password, use --global for every repository |
+git blame | Show who, what, and when something changed in a file | 
 git diff | View changes that have occurred in tracked files |
 git log | Show history of commits starting with latest commit | -p <file> (file changes over time)
-git status | Show the status of different files and changes since the most recent commit | -s (short),
+git status | Show the status of different files and changes since the most recent commit | -s (short)

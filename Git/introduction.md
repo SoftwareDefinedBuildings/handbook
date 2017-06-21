@@ -10,6 +10,8 @@ Git is popular among computer scientists across all levels as a source code mana
 
 To understand the true power of Git, another way to understand its utility is outside the context of programming. In fact, you can use Git to save changes for anything, from PDFs to JPGs to GIFs. The whole idea of Git is as an elaborate, well-documented 'save' function. A Git file is capable of recording any changes for any computer file across any period of time. :open_mouth:
 
+![](Screenshots/diagram.png) 
+
 ## Github vs. Git
 Github is a company that allows you to save your git history to a remote server. In contrast, git by itself performs the above operations on a 'local' level, which just means that everything you do happens and stays on your computer. Github is a company that allows you to save your local git changes to a remote server. Their website serves as an online platform that allows you to view revisions and monitor collaborations through a fantastic UI. In addition, in case anything happens to your computer, your code will be recoverable and safe as long as you've committed it to Github. It's a fantastic resource.
 
