@@ -22,4 +22,4 @@ Github is a company that allows you to save your git history to a remote server.
 Happy Committing! - :octocat:
 
 ### World Map of Git & Github
-![](Screenshots/diagram.png)
+![](../Screenshots/diagram.png)
