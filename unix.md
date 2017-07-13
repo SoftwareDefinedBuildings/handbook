@@ -7,10 +7,10 @@ Unix is a brutally simple language. Every command is very straightforward and gu
 
 ## Anatomy of a Unix Command :bust_in_silhouette:
 ![](Screenshots/sample-unix.png)
+
 A unix command is followed by options, also known as flags. They modify the intricacies regarding how the command is executed. More often than not, a command will also require some form of input that you type afterwards
 
 ## List of Unix Commands :clipboard:
-
 ### File Management  :file_folder:
 Command | Purpose | Options
 --- | --- | ---
@@ -29,7 +29,7 @@ vim (file) | Edit a file using Vim text editor | Excellent tutorial [here](http:
 Command | Purpose | Options
 --- | --- | ---
 chmod (octal) (file) | Change File Permissions | Click [here](https://www.computerhope.com/unix/uchmod.htm) for in depth explanation
-grep | Search for a pattern in files | Very powerful command, read more [here](http://www.uccs.edu/~ahitchco/grep/)
+grep | Search for a pattern in files | Powerful command, read more [here](http://www.uccs.edu/~ahitchco/grep/)
 kill (process id) | Kill a process identified with id | 9 (force kill)
 ps | Display active processes
 top | Display running processes (equivalent of activity monitor)
@@ -89,7 +89,7 @@ Up Arrow | Go through previous commands
 ## Resources :closed_book:
 1. Tutorials Point: https://www.tutorialspoint.com/unix/index.htm
 2. Cheat Sheet: http://cheatsheetworld.com/programming/unix-linux-cheat-sheet/
-3. A Unix Easter Egg :egg:: type 'telnet towel.blinkenlights.nl', then enter
+3. Unix Easter Egg :egg:: type 'telnet towel.blinkenlights.nl', then enter
 
 History of Unix
 ![](Screenshots/unix-history.png)
