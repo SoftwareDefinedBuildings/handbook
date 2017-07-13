@@ -1,4 +1,4 @@
-# Unix
+# Unix :floppy_disk:
 
 ## Basics
 Unix is a very significant language in the evolution of computer science. In a very general sense, UNIX is the language that allows you to navigate your operating system on a raw level. When you navigate Finder on Mac or File Systems on Windows, you're essentially traversing through a user interface of terminal. Since it was created in the 1970s, many 'flavors' of unix have been developed, some of which have materialized into the most operating systems today, including Apple's macOS and Linux.
@@ -9,8 +9,6 @@ Unix is a brutally simple language. Every command is very straightforward and gu
 ![](Screenshots/sample-unix.png)
 
 ## List of Unix Commands
-Legend
-^ - Requires Installation
 
 ### File Management
 Command | Purpose | Options
@@ -24,16 +22,17 @@ cp (file1) (file2) | Copy file1 to file2 | r (recursive)
 mv (file1) (file2) | Move file1 to file2
 cat/head/tail/more/less (file) | View a file's contents
 touch (file) | Create new file named 'file'
-vim (file) | Edit a file using Vim text editor
+vim (file) | Edit a file using Vim text editor | Excellent tutorial [here](http://www.openvim.com)
 
-### Permissions + Process Management
+### Permissions + Process Management + Searching
 Command | Purpose | Options
 --- | --- | ---
 chmod (octal) (file) | Change File Permissions | Click [here](https://www.computerhope.com/unix/uchmod.htm) for in depth explanation
+grep | Search for a pattern in files | Very powerful command, read more [here](http://www.uccs.edu/~ahitchco/grep/)
+kill (process id) | Kill a process identified with id | 9 (force kill)
 ps | Display active processes
 top | Display running processes (equivalent of activity monitor)
-htop ^ | More colorful 'top' | run 'apt-get install htop'
-kill (process id) | Kill a process identified with id | 9 (force kill)
+htop | More colorful 'top' | run 'apt-get install htop' to install
 
 *'chmod' Brief Explanation*
 This command changes the permissions for files. If you type 'ls -l' in a directory, you'll a notice column with strings that seem like  random combinations of 'r', 'w', 'x', '-'. That string actually details the permissions on that file.
@@ -59,24 +58,32 @@ In conclusion,
 * chmod 777 example.py - read, write, and execute for all
 * chmod 755 example.py - rwx for owner, rx for group + world
 
-### Searching
-Command | Purpose | Options
---- | --- | ---
-grep | Search for a pattern in files | Very powerful command, read more [here](http://www.uccs.edu/~ahitchco/grep/)
-
 ### System Information + Miscellaneous
 Command | Purpose
---- | --- | ---
+--- | ---
 cal | This month's calendar
 date | Today's date + time
 df | Show disk usage
 du | Show directory space usage
+echo (text) | Prints text in terminal
 finger (user) | Display information about user
+history | Numbered list of most recent commands (use grep to search)
 man (command) | Retrieve manual for a command
 uptime | How long computer has been working + availability
 w | Display who's online
 which (application) | Prints path location of app that will be run
 whoami | Display logged in user
+
+### Keyboard Commands
+Command | Purpose
+--- | ---
+Ctrl + c | Halts current command
+Ctrl + z | Stops current command, resumes with most recent process
+Ctrl + w | Deletes last word in current line
+Ctrl + u | Erases entire line
+Ctrl + d / exit | Log out of current session (closes window)
+!! | Repeat previous command
+Up Arrow | Go through previous commands
 
 ## Resources
 1. Tutorials Point: https://www.tutorialspoint.com/unix/index.htm
