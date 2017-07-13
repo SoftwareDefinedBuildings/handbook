@@ -12,7 +12,7 @@ Unix is a brutally simple language. Every command is very straightforward and gu
 Legend
 ^ - Requires Installation
 
-#### File Management
+### File Management
 Command | Purpose | Options
 --- | --- | ---
 ls | List items in your current directory | a (hidden files), l (long format)
@@ -26,19 +26,62 @@ cat/head/tail/more/less (file) | View a file's contents
 touch (file) | Create new file named 'file'
 vim (file) | Edit a file using Vim text editor
 
-#### Permissions + Process Management
+### Permissions + Process Management
 Command | Purpose | Options
 --- | --- | ---
-chmod | Change File Permissions | Click [here](https://www.computerhope.com/unix/uchmod.htm) for in depth explanation
+chmod (octal) (file) | Change File Permissions | Click [here](https://www.computerhope.com/unix/uchmod.htm) for in depth explanation
 ps | Display active processes
 top | Display running processes (equivalent of activity monitor)
-htop ^ | More colorful 'top'
+htop ^ | More colorful 'top' | run 'apt-get install htop'
 kill (process id) | Kill a process identified with id | 9 (force kill)
+
+*'chmod' Brief Explanation*
+This command changes the permissions for files. If you type 'ls -l' in a directory, you'll a notice column with strings that seem like  random combinations of 'r', 'w', 'x', '-'. That string actually details the permissions on that file.
+
+'r' means 'read', 'w' means 'write', and 'x' means execute. These are the three things you can do to a file.
+
+The permissions string is organized in a way where the first three characters refer to what the user can do to the file. The next three establish what members of your group can do, while the last three characters state what anybody is allowed to do.
+
+![](Screenshots/chmod-octat.png)
+
+Chmod is a command that allows you to change your permissions. The octal is a 3 digit number where each digit corresponds to permissions on different levels. In other words, the first digit corresponds to the user's permissions, while the second digit is the group's permissions and so on.
+
+* read (r) = 4
+* write (w) = 2
+* execute (x) = 1
+
+Based on a digit's value, you specify what permissions are allowed.
+* 7 = 4 + 2 + 1 ~ read, write, and execute are all allowed
+* 5 = 4 + 1 ~ read and execute are allowed.
+* 2 = 2 ~ only writing is allowed.
+
+In conclusion,
+* chmod 777 example.py - read, write, and execute for all
+* chmod 755 example.py - rwx for owner, rx for group + world
+
+### Searching
+Command | Purpose | Options
+--- | --- | ---
+grep | Search for a pattern in files | Very powerful command, read more [here](http://www.uccs.edu/~ahitchco/grep/)
+
+### System Information + Miscellaneous
+Command | Purpose
+--- | --- | ---
+cal | This month's calendar
+date | Today's date + time
+df | Show disk usage
+du | Show directory space usage
+finger (user) | Display information about user
+man (command) | Retrieve manual for a command
+uptime | How long computer has been working + availability
+w | Display who's online
+which (application) | Prints path location of app that will be run
+whoami | Display logged in user
 
 ## Resources
 1. Tutorials Point: https://www.tutorialspoint.com/unix/index.htm
 2. Cheat Sheet: http://cheatsheetworld.com/programming/unix-linux-cheat-sheet/
 3. A Unix Easter Egg :egg:: type 'telnet towel.blinkenlights.nl', then enter
 
-### History of Unix
+History of Unix
 ![](Screenshots/unix-history.png)
