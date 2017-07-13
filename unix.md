@@ -1,16 +1,17 @@
 # Unix :floppy_disk:
 
-## Basics
+## Basics :straight_rule:
 Unix is a very significant language in the evolution of computer science. In a very general sense, UNIX is the language that allows you to navigate your operating system on a raw level. When you navigate Finder on Mac or File Systems on Windows, you're essentially traversing through a user interface of terminal. Since it was created in the 1970s, many 'flavors' of unix have been developed, some of which have materialized into the most operating systems today, including Apple's macOS and Linux.
 
 Unix is a brutally simple language. Every command is very straightforward and guarantees efficient execution. The trick is making sure you know what you're doing. Don't worry. At the start, Unix will definitely come off as very unwieldy and monotonous compared to what you're used to. But trust, once you get the hang of things, you'll forget the days where you slowly point-and-clicked through file systems, in favor of 'ls' and 'cd'-ing through directories. :muscle:
 
-## Anatomy of a Unix Command
+## Anatomy of a Unix Command :bust_in_silhouette:
 ![](Screenshots/sample-unix.png)
+A unix command is followed by options, also known as flags. They modify the intricacies regarding how the command is executed. More often than not, a command will also require some form of input that you type afterwards
 
-## List of Unix Commands
+## List of Unix Commands :clipboard:
 
-### File Management
+### File Management  :file_folder:
 Command | Purpose | Options
 --- | --- | ---
 ls | List items in your current directory | a (hidden files), l (long format)
@@ -24,7 +25,7 @@ cat/head/tail/more/less (file) | View a file's contents
 touch (file) | Create new file named 'file'
 vim (file) | Edit a file using Vim text editor | Excellent tutorial [here](http://www.openvim.com)
 
-### Permissions + Process Management + Searching
+### Permissions :warning: + Process Management :construction_worker: + Searching :mag:
 Command | Purpose | Options
 --- | --- | ---
 chmod (octal) (file) | Change File Permissions | Click [here](https://www.computerhope.com/unix/uchmod.htm) for in depth explanation
@@ -58,7 +59,7 @@ In conclusion,
 * chmod 777 example.py - read, write, and execute for all
 * chmod 755 example.py - rwx for owner, rx for group + world
 
-### System Information + Miscellaneous
+### System Information + Miscellaneous :heavy_exclamation_mark:
 Command | Purpose
 --- | ---
 cal | This month's calendar
@@ -74,7 +75,7 @@ w | Display who's online
 which (application) | Prints path location of app that will be run
 whoami | Display logged in user
 
-### Keyboard Commands
+### Keyboard Commands :computer:
 Command | Purpose
 --- | ---
 Ctrl + c | Halts current command
@@ -85,7 +86,7 @@ Ctrl + d / exit | Log out of current session (closes window)
 !! | Repeat previous command
 Up Arrow | Go through previous commands
 
-## Resources
+## Resources :closed_book:
 1. Tutorials Point: https://www.tutorialspoint.com/unix/index.htm
 2. Cheat Sheet: http://cheatsheetworld.com/programming/unix-linux-cheat-sheet/
 3. A Unix Easter Egg :egg:: type 'telnet towel.blinkenlights.nl', then enter
