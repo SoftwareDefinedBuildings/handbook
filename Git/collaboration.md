@@ -25,25 +25,24 @@ Branches are simply pointers to commits. As a convention, the 'master' branch te
 
 ## Commands
 ### Creating / Switching Branches
-```unix
-git branch <new branch name>
-git branch -av
-git branch -d
-git checkout <branch>
-```
+Let's start from the basics: creating and switching from branch to branch! Every repository has at least one branch, commonly called the master branch. When you create another branch, you're photo-copying your project at its latest commit. Local branches have a corresponding remote branch that exists on Github. With branches, your 'push' command will look a bit different. Instead of 'git push origin master', you'd replace 'origin' and 'master' with your remote and local branch names in that order.
 
 Option & Commands | Purpose
 --- | ---
--a |
+git branch | View list of all branches
+git branch (name) | Create a new branch with 'name'
+git branch -d (name) | Delete a branch with 'name'
+git branch -r | List remote branches
+git branch -a | List local + remote branches
+git checkout (name) | Switch onto existing branch named 'name'
 
 ### Retrieve Updates from Remote Repository
-```unix
-git pull <remote> <branch>
-git fetch <remote>
-```
+Continuing with Randy, let's say Randy pushed a couple changes to the remote repository. Now, before you keep working, it's important that you retrieve Randy's changes so that your local directory reflects those changes. This is where the 'pull' and 'fetch' commands prove helpful. These commands take unseen remote repository changes and update your local repository.
 
-### Merging Branches
-```unix
-git pull <remote> <branch>
-git fetch <remote>
-```
+Keep in mind, however, that this command is where merge conflicts most often appear. If the same file is modified both locally and remotely, git pull is what exposes the conflict. Some best practices are to make sure to 'git stash' conflicting changes before pulling.
+
+Option & Commands | Purpose
+--- | ---
+git pull (remote) (branch) | Applies 'remote' modifications to local 'branch'
+git fetch (remote) | Retrieves changes from 'remote', does not apply them locally
+git merge (branch) | Combines two branches by creating a new commit or fast forwarding
