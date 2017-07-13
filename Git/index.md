@@ -21,6 +21,13 @@
 * git commit -m 'Commit Message'
 * git push origin master
 
+#### Merge a branch into Master 
+Given local branches 'test' and 'master'
+* git checkout master
+* git pull origin master
+* git merge test
+* git push origin master
+
 #### Miscellaneous
 * git blame test.py
 * git log
