@@ -88,7 +88,9 @@ Up Arrow | Recover previous commands
 
 ## Resources :closed_book:
 1. Tutorials Point: https://www.tutorialspoint.com/unix/index.htm
-2. Cheat Sheet: http://cheatsheetworld.com/programming/unix-linux-cheat-sheet/
+2. Cheat Sheet:
+* http://cheatsheetworld.com/programming/unix-linux-cheat-sheet/
+* https://files.fosswire.com/2007/08/fwunixref.pdf
 3. Unix Easter Egg :egg:: type 'telnet towel.blinkenlights.nl', then enter
 
 History of Unix
