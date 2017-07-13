@@ -84,7 +84,7 @@ Ctrl + w | Deletes last word in current line
 Ctrl + u | Erases entire line
 Ctrl + d / exit | Log out of current session (closes window)
 !! | Repeat previous command
-Up Arrow | Go through previous commands
+Up Arrow | Recover previous commands
 
 ## Resources :closed_book:
 1. Tutorials Point: https://www.tutorialspoint.com/unix/index.htm
